@@ -1,0 +1,121 @@
+
+/* Set Variables for colors selected for site */
+:root {
+    --darkblue: #161925;
+    --azure: #3F84E5;
+    --tan: #B5A886;
+    --red: #EF3E36;
+    --white: #FFE4FA;
+}
+/* Set body background color white*/
+body {
+    background-color: var(--white);
+}
+/*header styling */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+/* Section Styling */
+section {
+        display: flex;
+}
+
+/* Aside Styling */
+aside {
+    margin: 10px;
+    width: 25%;
+    display: flex;
+    border-right: 2px solid var(--darkblue);
+
+}
+
+/* about me section */
+
+.aboutmediv {
+    margin: 10px;
+    width: 75%;
+    padding: 20px;
+    background-color: var(--azure);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* work section */
+
+/* footer section */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+
+footer div {
+padding-top: 15px;
+margin-right: 20px;
+float: right;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 20px;
+}
+
+footer div ul {
+    list-style-type: none;
+}
+
+footer div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* media section */
+@media screen and (max-width: 768px) {
+    header,
+    nav,
+    main,
+    footer,
+    {
+      flex-direction: column;
+    }
+  }
