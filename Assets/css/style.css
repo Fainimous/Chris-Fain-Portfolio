@@ -15,7 +15,7 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
-    padding 20px;
+    padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--darkblue);
     color: var(--white);
@@ -56,6 +56,15 @@ h2 {
     font-size: 32px;
 }
 
+/* Banner image */
+.banner {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80);
+    background-size: cover;
+    background-position: center;
+}
 /* Section Styling */
 section {
         display: flex;
@@ -76,17 +85,54 @@ aside {
     margin: 10px;
     width: 75%;
     padding: 20px;
-    background-color: var(--azure);
+    background-color: var(--tan);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* work section */
+/* card styling */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 10px;
+    padding: 20px;
+}
 
-/* footer section */
+.card {
+    flex: 1 1 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+.card h3 {
+    padding: 20px;
+    background: #13293d;
+    color: #fff;
+  }
+  
+.card img {
+    opacity: 75%;
+  }
+
+.card img:hover {
+    opacity: 100%;
+}
+
+.maincard {
+
+}
+
+
+
+
+
+/* footer section goal is to have this similar to the header/nav at the top of the page*/
 footer {
     display: flex;
     flex-wrap: wrap;
-    padding 20px;
+    padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--darkblue);
     color: var(--white);
@@ -114,7 +160,7 @@ footer div ul li {
     header,
     nav,
     main,
-    footer,
+    footer
     {
       flex-direction: column;
     }
